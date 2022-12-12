@@ -8,7 +8,7 @@ public class UserEmailValidation {
 
 public static boolean checkValidEmail(String email) {
 		
-		String emailregex = "^[a-z]{3,}(.[a-z]*)?@([a-z]){2,}.[a-z]+(.in)*";
+		String emailregex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}+([.][a-zA-Z]{2,3})?$";
 		Pattern pattern = Pattern.compile(emailregex);
 		
 		if (email == null) {
