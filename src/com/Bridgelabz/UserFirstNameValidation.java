@@ -1,9 +1,10 @@
 package com.Bridgelabz;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UserRegistration {
+public class UserFirstNameValidation {
 	
 	public static boolean checkValidFirstName(String firstName) {
 		
@@ -21,7 +22,9 @@ public class UserRegistration {
 
 	public static void main(String[] args) {
 		
-		String firstName = "Dhanshree";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your First name: ");
+		String firstName = sc.next();
 		
 		boolean isfirstNameValid = checkValidFirstName(firstName);
 		
