@@ -8,7 +8,7 @@ public class UserPasswordValidation {
 
 	public static boolean checkValidPassword(String password) {
 		
-		String passwordregex = ".{8,}";
+		String passwordregex = "(?=.{8,}).*[A-Z].*";
 		Pattern pattern = Pattern.compile(passwordregex);
 		
 		if (password == null) {
